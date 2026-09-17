@@ -1,0 +1,17 @@
+[project]
+name = "blog-platform"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "email-validator>=2.3.0",
+    "fastapi>=0.141.1",
+    "pip>=26.2.1",
+    "pwdlib[argon2]>=0.3.1",
+    "pymysql>=1.2.0",
+    "pytest>=9.1.1",
+    "sqlmodel>=0.0.39",
+    "uvicorn[standard]>=0.52.4",
+]
+

@@ -1,0 +1,856 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f3f1ed;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =================================
+   COMMON
+================================= */
+
+.brand {
+    font-size: 18px;
+
+    font-weight: 800;
+
+    letter-spacing: 4px;
+}
+
+
+.small-text {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+
+    margin-bottom: 18px;
+}
+
+
+.message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 13px;
+}
+
+
+/* =================================
+   LOGIN PAGE
+================================= */
+
+.login-page {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LEFT */
+
+.login-left {
+
+    background: #181818;
+
+    color: white;
+
+    padding: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.login-intro {
+
+    max-width: 370px;
+}
+
+
+.login-intro h1 {
+
+    font-size: 52px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+
+.login-intro h1 span {
+
+    display: block;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.login-intro > p:last-child {
+
+    color: #aaa;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 330px;
+}
+
+
+.quote {
+
+    font-size: 13px;
+
+    color: #777;
+
+    border-left: 2px solid #555;
+
+    padding-left: 15px;
+}
+
+
+/* RIGHT */
+
+.login-right {
+
+    background: #fafafa;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px;
+}
+
+
+.login-form-container {
+
+    width: 100%;
+
+    max-width: 390px;
+}
+
+
+.login-form-container h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 8px;
+
+    color: #181818;
+}
+
+
+.login-subtitle {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =================================
+   INPUTS
+================================= */
+
+.input-group {
+
+    margin-bottom: 20px;
+}
+
+
+.input-group label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    color: #333;
+}
+
+
+.input-group input,
+.input-group select {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 14px;
+}
+
+
+.input-group input:focus,
+.input-group select:focus {
+
+    outline: none;
+
+    border-color: #181818;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =================================
+   LOGIN BUTTON
+================================= */
+
+.login-button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #181818;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+
+.login-button:hover {
+
+    background: #333;
+}
+
+
+.arrow {
+
+    font-size: 20px;
+}
+
+
+/* =================================
+   REGISTER LINK
+================================= */
+
+.register-link {
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e5e5e5;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+.register-link a {
+
+    color: #181818;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+}
+
+
+.register-link a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =================================
+   REGISTER PAGE
+================================= */
+
+.register-page {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    min-height: 650px;
+
+    display: grid;
+
+    grid-template-columns: 55% 45%;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LEFT */
+
+.register-content {
+
+    background: #e6e1d8;
+
+    padding: 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    color: #181818;
+}
+
+
+.register-intro {
+
+    max-width: 430px;
+}
+
+
+.register-intro h1 {
+
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+
+.register-intro h1 span {
+
+    display: block;
+
+    font-style: italic;
+
+    font-weight: 400;
+}
+
+
+.register-intro > p:last-child {
+
+    max-width: 360px;
+
+    color: #666;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+.register-note {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+    color: #666;
+}
+
+
+.note-number {
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    padding: 10px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 50%;
+}
+
+
+/* RIGHT */
+
+.register-form-side {
+
+    background: #fafafa;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px;
+}
+
+
+.register-form-container {
+
+    width: 100%;
+
+    max-width: 390px;
+}
+
+
+.register-form-container h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 8px;
+}
+
+
+.register-subtitle {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   REGISTER BUTTON
+================================= */
+
+.register-button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #181818;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    transition: 0.2s;
+}
+
+
+.register-button:hover {
+
+    background: #333;
+}
+
+
+.register-button span {
+
+    font-size: 20px;
+}
+
+
+/* =================================
+   LOGIN LINK
+================================= */
+
+.login-link {
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e5e5e5;
+
+    text-align: center;
+
+    font-size: 13px;
+
+    color: #777;
+}
+
+
+.login-link a {
+
+    color: #181818;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    margin-left: 5px;
+}
+
+
+.login-link a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 750px) {
+
+    .login-page,
+    .register-page {
+
+        width: 95%;
+
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        border-radius: 12px;
+    }
+
+
+    .login-left,
+    .register-content {
+
+        display: none;
+    }
+
+
+    .login-right,
+    .register-form-side {
+
+        padding: 40px 25px;
+    }
+
+
+    .login-form-container h2 {
+
+        font-size: 32px;
+    }
+
+
+    .register-form-container h2 {
+
+        font-size: 30px;
+    }
+
+}
+
+/* ============================= */
+/* DASHBOARD */
+/* ============================= */
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #f5f3ef;
+    color: #1d1d1b;
+}
+
+
+/* HEADER */
+
+.dashboard-header {
+    height: 80px;
+    padding: 0 7%;
+    background: #171717;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-header .logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#welcomeUser {
+    font-size: 0.95rem;
+}
+
+#logoutButton {
+    padding: 10px 20px;
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    background: transparent;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#logoutButton:hover {
+    background: white;
+    color: #171717;
+}
+
+
+/* MAIN CONTAINER */
+
+.dashboard-container {
+    width: 86%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+
+/* WELCOME SECTION */
+
+.welcome-section {
+    margin-bottom: 50px;
+}
+
+.small-heading {
+    margin-bottom: 12px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: #777;
+}
+
+.welcome-section h1 {
+    margin-bottom: 12px;
+
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 1.05rem;
+}
+
+
+/* DASHBOARD CARDS */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    margin-bottom: 50px;
+}
+
+.dashboard-card {
+    padding: 35px;
+
+    background: white;
+    border: 1px solid #e1ded8;
+    border-radius: 12px;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    background: #171717;
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 1.3rem;
+}
+
+.dashboard-card h2 {
+    margin-bottom: 12px;
+
+    font-size: 1.4rem;
+}
+
+.dashboard-card p {
+    margin-bottom: 25px;
+
+    color: #777;
+    line-height: 1.6;
+}
+
+.dashboard-card button {
+    padding: 12px 22px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #171717;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.dashboard-card button:hover {
+    background: #333;
+}
+
+
+/* ACCOUNT SECTION */
+
+.account-section {
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #e1ded8;
+    border-radius: 12px;
+}
+
+.account-section h2 {
+    margin-bottom: 25px;
+
+    font-size: 1.3rem;
+}
+
+.account-info {
+    display: flex;
+    gap: 50px;
+}
+
+.account-info p {
+    color: #666;
+}
+
+.account-info strong {
+    color: #171717;
+    margin-right: 8px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .dashboard-header {
+        padding: 0 5%;
+    }
+
+    .header-right {
+        gap: 12px;
+    }
+
+    #welcomeUser {
+        display: none;
+    }
+
+    .dashboard-container {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .welcome-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .account-info {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+

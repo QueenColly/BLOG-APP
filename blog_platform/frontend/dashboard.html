@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlogSpace Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <header class="dashboard-header">
+
+        <div class="logo">
+            BLOGSPACE
+        </div>
+
+        <div class="header-right">
+            <span id="welcomeUser"></span>
+
+            <button id="logoutButton">
+                Logout
+            </button>
+        </div>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+
+            <p class="small-heading">YOUR DASHBOARD</p>
+
+            <h1 id="dashboardTitle">
+                Welcome back 
+            </h1>
+
+            <p>
+                What would you like to do today?
+            </p>
+
+        </section>
+
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    ✍
+                </div>
+
+                <h2>Create a Post</h2>
+
+                <p>
+                    Share your thoughts, ideas and stories
+                    with the BlogSpace community.
+                </p>
+
+                <button>
+                    Create Post
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+                    📖
+                </div>
+
+                <h2>View Posts</h2>
+
+                <p>
+                    Discover stories and posts from
+                    other people.
+                </p>
+
+                <button>
+                    View Posts
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="account-section">
+
+            <h2>Your Account</h2>
+
+            <div class="account-info">
+
+                <p>
+                    <strong>Username:</strong>
+                    <span id="accountUsername"></span>
+                </p>
+
+                <p>
+                    <strong>Role:</strong>
+                    <span id="accountRole"></span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
